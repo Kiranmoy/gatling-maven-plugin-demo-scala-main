@@ -1,0 +1,14 @@
+
+mvn gatling:test -DUSERS=100 -DRAMP_DURATION=20 -DWORKLOAD_MODEL=o
+
+mvn gatling:test -DUSERS=100 -DRAMP_DURATION=20 -DWORKLOAD_MODEL=c
+
+mvn gatling:test -DUSERS=100 -DRAMP_DURATION=20 -DWORKLOAD_MODEL=x
+
+
+NOTE:
+
+WORKLOAD_MODEL
+o - open model
+c - closed model
+anything else - by default, open model
